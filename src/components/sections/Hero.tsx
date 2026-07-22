@@ -18,9 +18,9 @@ export default function Hero() {
         </span>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center lg:items-end min-h-[calc(100vh-80px)] lg:min-h-[724px] overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center md:items-end min-h-[calc(100vh-80px)] lg:min-h-[724px]">
         {/* Text content */}
-        <div className="w-full lg:w-2/5 flex flex-col justify-center pb-6 lg:pb-24 z-10 relative pt-4 lg:-mt-12">
+        <div className="w-full md:w-2/5 flex flex-col justify-center pb-6 md:pb-24 z-10 relative pt-4 md:-mt-12">
           <div className="flex gap-6 sm:gap-8 md:gap-12 mb-10 md:mb-16 lg:mb-24">
             {stats.map((stat) => (
               <div key={stat.label} className="relative pt-4">
@@ -66,17 +66,17 @@ export default function Hero() {
         </div>
 
         {/* Hero image */}
-        <div className="w-full lg:w-3/5 relative flex items-end justify-center lg:justify-end lg:ml-8">
+        <div className="w-full md:w-3/5 relative flex items-end justify-center md:justify-end md:ml-8">
           <img
             src="/Pictures/Photo_1784721434246.png"
             alt="Uzair Raheem Portrait"
-            className="w-full max-w-[700px] max-h-[60vh] md:max-h-[70vh] lg:max-h-none h-auto object-cover object-bottom z-0"
+            className="w-full max-w-[700px] md:h-full h-auto object-cover object-bottom z-0"
           />
         </div>
       </div>
 
       {/* Ai Box — positioned on hero section, hidden on very small screens */}
-      <Link to="/chatbot" className="thought-cloud absolute right-2 sm:right-4 md:right-8 lg:right-20 bottom-[7%] sm:top-1/2 sm:-translate-y-1/2 sm:bottom-auto z-20 block cursor-pointer">
+      <Link to="/chatbot" className="thought-cloud ai-box-mid absolute right-3 sm:right-4 md:right-8 lg:right-10 bottom-[7%] lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 z-20 block cursor-pointer">
             {/* Desktop: mini chat interface */}
             <div className="thought-cloud-inner relative hidden lg:block bg-brand-dark rounded-[30px_20px_25px_15px] shadow-lg p-6 pb-4 w-[260px]">
               <div className="flex items-center gap-2 mb-3">

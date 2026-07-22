@@ -25,6 +25,8 @@
   --spacing-gutter: 32px;
   --spacing-margin: 64px;
   --spacing-section: 160px;
+
+  --breakpoint-m-lg: 1024px;
 }
 
 body {
@@ -131,4 +133,11 @@ body {
 .chat-input:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.3);
+}
+
+@media (min-width: 1024px) and (max-width: 1147px) {
+  .ai-box-mid {
+    right: 20px;
+    scale: 0.77;
+  }
 }
