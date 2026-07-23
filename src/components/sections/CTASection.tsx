@@ -45,11 +45,11 @@ export default function CTASection() {
                 Ready to scale?
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[72px] mx-auto max-w-4xl font-bold leading-tight tracking-tight">
-                Got a Vision? Let's Bring It to Life!
+                Got a Vision? Let's Build It.
               </h2>
               <p className="text-sm sm:text-base md:text-lg opacity-80 max-w-2xl mx-auto mt-4 sm:mt-6">
-                Whether it's a complex backend overhaul, a new AI core, or a
-                high-performance web ecosystem, I'm ready to engineer your
+                Whether it's an autonomous AI pipeline, a full-stack SaaS platform,
+                or a high-performance backend overhaul — I'm ready to engineer your
                 success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mt-8 sm:mt-12">

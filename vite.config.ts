@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
+    proxy: {
+      '/ask': 'https://jawad.nexteksol.com',
+      '/health': 'https://jawad.nexteksol.com',
+    },
   },
 })

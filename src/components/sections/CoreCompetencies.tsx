@@ -2,32 +2,32 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 const competencies = [
   {
-    icon: 'terminal',
-    title: 'High-Performance Python',
-    description:
-      'Architecting low-latency systems with a focus on concurrency and execution speed.',
-    tags: ['FastAPI', 'AsyncIO', 'Distributed Systems'],
-  },
-  {
-    icon: 'cloud_done',
-    title: 'Cloud Native Architecture',
-    description:
-      'Building resilient, auto-scaling infrastructures for global enterprise applications.',
-    tags: ['Kubernetes', 'AWS/GCP', 'Microservices'],
-  },
-  {
-    icon: 'database',
-    title: 'Database Engineering',
-    description:
-      'Optimizing data persistence layers for high-throughput and complex relational models.',
-    tags: ['PostgreSQL', 'Redis', 'Data Modeling'],
-  },
-  {
     icon: 'smart_toy',
     title: 'AI & Automation',
     description:
-      'Integrating advanced LLMs and autonomous agents into existing business workflows.',
-    tags: ['LLM Integration', 'Custom Agents', 'Workflows'],
+      'Designing multi-agent systems, LLM-integrated workflows, and autonomous pipelines using n8n, Temporal, Claude, and OpenAI.',
+    tags: ['n8n', 'Temporal', 'Claude', 'OpenAI'],
+  },
+  {
+    icon: 'code',
+    title: 'Full-Stack Engineering',
+    description:
+      'Shipping production applications across React, Next.js, Node.js, Python, and PostgreSQL — 15+ apps delivered for startups and enterprises.',
+    tags: ['React', 'Next.js', 'Node.js', 'PostgreSQL'],
+  },
+  {
+    icon: 'cloud_done',
+    title: 'Cloud & DevOps',
+    description:
+      'Deploying scalable infrastructure on AWS and GCP with CI/CD pipelines that reduced release cycles by 30%.',
+    tags: ['AWS', 'GCP', 'CI/CD', 'Firebase'],
+  },
+  {
+    icon: 'groups',
+    title: 'Team Leadership',
+    description:
+      'Led teams of 20+ engineers, mentored juniors, conducted code reviews, and introduced processes that improved delivery speed.',
+    tags: ['20+ Engineers', 'Code Reviews', 'Mentoring'],
   },
 ]
 
@@ -41,11 +41,11 @@ export default function CoreCompetencies() {
               Core Competencies
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[56px] font-bold leading-tight mb-4 sm:mb-6 text-white">
-              Technical Arsenal
+              What I Bring
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
-              Mastery in modern backend architecture and high-performance system
-              design.
+              6+ years of production experience across AI automation, full-stack
+              engineering, cloud infrastructure, and team leadership.
             </p>
           </div>
 

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
 const stats = [
-  { value: '+200', label: 'Project completed' },
-  { value: '+50', label: 'Startup raised' },
+  { value: '15+', label: 'Apps Shipped' },
+  { value: '6+', label: 'Years Experience' },
 ]
 
 export default function Hero() {
@@ -11,10 +11,10 @@ export default function Hero() {
       {/* Sidebar meta - desktop only */}
       <div className="hidden lg:flex flex-col justify-between absolute left-8 top-32 bottom-12 py-10">
         <span className="vertical-text text-xs uppercase tracking-widest text-brand-gray opacity-50">
-          Product designer
+          Sr. Software Engineer
         </span>
         <span className="vertical-text text-xs tracking-widest text-brand-gray opacity-50">
-          2012
+          2016
         </span>
       </div>
 
@@ -38,13 +38,13 @@ export default function Hero() {
           <div className="mb-6 md:mb-8">
             <h1 className="hero-title font-bold text-brand-dark">Hello!</h1>
             <p className="text-base sm:text-lg md:text-xl text-brand-dark font-medium mt-3 md:mt-4">
-              <span className="opacity-30 mr-2">&mdash;</span> It's Uzair Raheem{' '}
-              <span className="block sm:inline">a design wizard</span>
+              <span className="opacity-30 mr-2">&mdash;</span> I'm Uzair Rahim{' '}
+              <span className="block sm:inline">Sr. Software Engineer</span>
             </p>
           </div>
 
           <p className="text-sm sm:text-base md:text-lg text-brand-gray leading-relaxed max-w-sm sm:max-w-md mb-6 md:mb-8">
-            I craft high-performance systems and scalable architectures that turn bold ideas into reliable products. From cloud infrastructure to AI integration — I build things that last.
+            Full-stack engineer with 6+ years of production experience, now 3+ years deep in AI automation — designing multi-agent systems, LLM-integrated workflows, and autonomous pipelines that replace manual processes entirely.
           </p>
 
           <div className="mt-auto hidden lg:flex items-center gap-2 text-xs uppercase tracking-widest text-brand-gray">
@@ -69,7 +69,7 @@ export default function Hero() {
         <div className="w-full md:w-3/5 relative flex items-end justify-center md:justify-end md:ml-8">
           <img
             src="/Pictures/Photo_1784721434246.png"
-            alt="Uzair Raheem Portrait"
+            alt="Uzair Rahim Portrait"
             className="w-full max-w-[700px] md:h-full h-auto object-cover object-bottom z-0"
           />
         </div>

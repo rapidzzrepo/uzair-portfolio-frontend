@@ -1,10 +1,10 @@
 import ScrollReveal from '../ui/ScrollReveal'
 
 const metrics = [
-  { value: '200+', label: 'Projects Delivered' },
-  { value: '10+', label: 'Years Experience' },
-  { value: '50+', label: 'Enterprise Clients' },
-  { value: '99%', label: 'Success Rate' },
+  { value: '15+', label: 'Apps Shipped' },
+  { value: '6+', label: 'Years Experience' },
+  { value: '30%', label: 'Faster Releases' },
+  { value: '40%', label: 'Backend Boost' },
 ]
 
 export default function KeyMetrics() {

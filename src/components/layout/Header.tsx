@@ -14,7 +14,7 @@ export default function Header() {
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-6 sm:px-6 md:px-12 bg-surface/80 backdrop-blur-md">
       <div className="flex items-center gap-6 md:gap-12">
         <a href="#" className="w-8 h-8 flex items-center justify-center overflow-hidden rounded-full shrink-0">
-          <img src="/Pictures/Photo_1784721434246.png" alt="Uzair Raheem" className="w-full h-full object-cover" />
+          <img src="/Pictures/Photo_1784721434246.png" alt="Uzair Rahim" className="w-full h-full object-cover" />
         </a>
         <ul className="hidden md:flex space-x-8 text-sm font-medium text-brand-gray">
           {navLinks.map((link) => (
