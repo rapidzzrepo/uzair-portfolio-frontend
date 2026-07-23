@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const stats = [
   { value: '15+', label: 'Apps Shipped' },
-  { value: '6+', label: 'Years Experience' },
+  { value: '10+', label: 'Years Experience' },
 ]
 
 export default function Hero() {
@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           <p className="text-sm sm:text-base md:text-lg text-brand-gray leading-relaxed max-w-sm sm:max-w-md mb-6 md:mb-8">
-            Full-stack engineer with 6+ years of production experience, now 3+ years deep in AI automation — designing multi-agent systems, LLM-integrated workflows, and autonomous pipelines that replace manual processes entirely.
+            Full-stack engineer with 10+ years of production experience, now 3+ years deep in AI automation — designing multi-agent systems, LLM-integrated workflows, and autonomous pipelines that replace manual processes entirely.
           </p>
 
           <div className="mt-auto hidden lg:flex items-center gap-2 text-xs uppercase tracking-widest text-brand-gray">

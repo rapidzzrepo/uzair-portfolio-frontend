@@ -43,7 +43,7 @@ export default function EngineeringPhilosophy() {
               </h2>
               <p className="text-on-surface-var text-base sm:text-lg leading-relaxed mb-8 sm:mb-12">
                 I work best at the intersection of engineering and automation — turning
-                manual processes into intelligent, reliable systems. With 6+ years of
+                manual processes into intelligent, reliable systems. With 10+ years of
                 production experience and 3+ years deep in AI automation, I design
                 multi-agent systems and autonomous pipelines that replace manual work entirely.
               </p>

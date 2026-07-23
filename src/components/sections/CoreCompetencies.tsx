@@ -44,7 +44,7 @@ export default function CoreCompetencies() {
               What I Bring
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto text-sm sm:text-base md:text-lg">
-              6+ years of production experience across AI automation, full-stack
+              10+ years of production experience across AI automation, full-stack
               engineering, cloud infrastructure, and team leadership.
             </p>
           </div>

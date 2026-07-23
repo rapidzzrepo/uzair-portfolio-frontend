@@ -2,7 +2,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 const metrics = [
   { value: '15+', label: 'Apps Shipped' },
-  { value: '6+', label: 'Years Experience' },
+  { value: '10+', label: 'Years Experience' },
   { value: '30%', label: 'Faster Releases' },
   { value: '40%', label: 'Backend Boost' },
 ]

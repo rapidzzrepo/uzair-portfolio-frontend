@@ -24,7 +24,7 @@ const NETWORK_ERROR = "Couldn't reach the AI. Check your connection and try agai
 const welcomeMessage: Message = {
   id: 'welcome',
   role: 'ai',
-  text: "Hello, I am Uzair Rahim's AI assistant. I have been trained on his professional history — 6+ years in software engineering, 3+ years in AI automation, multi-agent systems, and full-stack architecture. How can I assist you today?",
+  text: "Hello, I am Uzair Rahim's AI assistant. I have been trained on his professional history — 10+ years in software engineering, 3+ years in AI automation, multi-agent systems, and full-stack architecture. How can I assist you today?",
   timestamp: Date.now(),
 }
 
