@@ -3,8 +3,7 @@ import { useState } from 'react'
 const navLinks = [
   { label: 'About Me', href: '#about' },
   { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Services', href: '#services' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'What I Bring', href: '#competencies' },
 ]
 
 export default function Header() {
@@ -12,24 +11,28 @@ export default function Header() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-6 sm:px-6 md:px-12 bg-surface/80 backdrop-blur-md">
-      <div className="flex items-center gap-6 md:gap-12">
-        <a href="#" className="w-8 h-8 flex items-center justify-center overflow-hidden rounded-full shrink-0">
-          <img src="/Pictures/Photo_1784721434246.png" alt="Uzair Rahim" className="w-full h-full object-cover" />
+      <div className="flex items-center gap-2.5 shrink-0">
+        <a href="#" className="flex items-center gap-2.5 shrink-0">
+          <img src="/Pictures/Photo_1784721434246.png" alt="Uzair Rahim" className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover" />
+          <div className="flex flex-col leading-none">
+            <span className="text-sm sm:text-base font-bold text-brand-dark tracking-tight">Uzair Rahim</span>
+            <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.18em] text-brand-gray mt-0.5">Sr. Software Engineer</span>
+          </div>
         </a>
-        <ul className="hidden md:flex space-x-8 text-sm font-medium text-brand-gray">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className="hover:text-black transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
-      <div className="flex items-center gap-4">
+      <ul className="hidden md:flex flex-1 justify-center space-x-8 text-sm font-medium text-brand-gray">
+        {navLinks.map((link) => (
+          <li key={link.label}>
+            <a
+              href={link.href}
+              className="hover:text-black transition-colors"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div className="flex items-center gap-4 shrink-0">
         <a
           href="#"
           className="hidden sm:flex text-sm font-medium items-center gap-1 group text-brand-gray hover:text-black transition-colors"

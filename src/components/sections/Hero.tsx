@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
+import { useTypewriter } from '../../hooks/useTypewriter'
 
 const stats = [
-  { value: '15+', label: 'Apps Shipped' },
+  { value: '15+', label: 'Well Maintained Apps' },
   { value: '10+', label: 'Years Experience' },
 ]
 
 export default function Hero() {
+  const { displayed, isDone } = useTypewriter('Hello!', 120, 500)
+
   return (
     <main className="relative pt-20 md:pt-24">
       {/* Sidebar meta - desktop only */}
@@ -36,7 +39,7 @@ export default function Hero() {
           </div>
 
           <div className="mb-6 md:mb-8">
-            <h1 className="hero-title font-bold text-brand-dark">Hello!</h1>
+            <h1 className={`hero-title font-bold text-brand-dark${isDone ? ' typing-done' : ''}`}>{displayed}</h1>
             <p className="text-base sm:text-lg md:text-xl text-brand-dark font-medium mt-3 md:mt-4">
               <span className="opacity-30 mr-2">&mdash;</span> I'm Uzair Rahim{' '}
               <span className="block sm:inline">Sr. Software Engineer</span>
@@ -66,11 +69,11 @@ export default function Hero() {
         </div>
 
         {/* Hero image */}
-        <div className="w-full md:w-3/5 relative flex items-end justify-center md:justify-end md:ml-8">
+        <div className="w-full md:w-3/5 relative flex items-end justify-center md:justify-end md:ml-8 flex-1 md:flex-none">
           <img
             src="/Pictures/Photo_1784721434246.png"
             alt="Uzair Rahim Portrait"
-            className="w-full max-w-[700px] md:h-full h-auto object-cover object-bottom z-0"
+            className="w-full max-w-[700px] h-full object-cover object-bottom z-0"
           />
         </div>
       </div>

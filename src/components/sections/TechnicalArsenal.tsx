@@ -3,7 +3,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 export default function TechnicalArsenal() {
   return (
     <ScrollReveal>
-      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-12 lg:px-16 bg-surface" id="stack">
+      <section className="py-16 sm:py-20 pt-16 pb-28 md:py-20 md:pb-40 px-4 sm:px-6 md:px-12 lg:px-16 bg-surface" id="stack">
         <div className="max-w-[1280px] mx-auto">
           <div className="text-center mb-12 sm:mb-16 md:mb-20">
             <p className="text-xs sm:text-sm font-mono text-cta-gold uppercase tracking-widest mb-4">
@@ -81,17 +81,6 @@ export default function TechnicalArsenal() {
                   AI &amp; Automation
                 </h4>
                 <p className="text-white/80 text-xs sm:text-sm">Claude, OpenAI, n8n, Agentic AI</p>
-              </div>
-            </div>
-
-            {/* PHP / Legacy */}
-            <div className="col-span-1 sm:col-span-2 bg-white border border-outline-var p-5 sm:p-8 rounded-2xl flex items-center gap-4 sm:gap-6 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-3xl sm:text-4xl text-primary p-3 sm:p-4 bg-surface rounded-xl shrink-0">
-                code
-              </span>
-              <div>
-                <h4 className="text-base sm:text-lg font-bold">PHP / Laravel</h4>
-                <p className="text-text-muted text-xs sm:text-sm">Jest, Cypress, Testing</p>
               </div>
             </div>
           </div>
