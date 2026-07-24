@@ -8,6 +8,7 @@ import TechnicalArsenal from './components/sections/TechnicalArsenal'
 import CoreCompetencies from './components/sections/CoreCompetencies'
 import FeaturedProjects from './components/sections/FeaturedProjects'
 import CTASection from './components/sections/CTASection'
+import Contact from './pages/Contact'
 import Chatbot from './pages/Chatbot'
 
 function Home() {
@@ -38,6 +39,7 @@ export default function App() {
             </>
           }
         />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
     </BrowserRouter>

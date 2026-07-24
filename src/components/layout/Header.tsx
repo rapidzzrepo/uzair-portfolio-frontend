@@ -34,7 +34,7 @@ export default function Header() {
       </ul>
       <div className="flex items-center gap-4 shrink-0">
         <a
-          href="#"
+          href="/contact"
           className="hidden sm:flex text-sm font-medium items-center gap-1 group text-brand-gray hover:text-black transition-colors"
         >
           Book A Call
@@ -81,7 +81,7 @@ export default function Header() {
             ))}
             <li>
               <a
-                href="#"
+                href="/contact"
                 className="text-sm font-medium text-brand-gray hover:text-black transition-colors block sm:hidden"
                 onClick={() => setMenuOpen(false)}
               >
