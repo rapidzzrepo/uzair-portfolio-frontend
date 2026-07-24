@@ -1,4 +1,4 @@
-import { type FormEvent } from 'react'
+import { useState, useRef, useEffect, type FormEvent } from 'react'
 
 const RECIPIENT = 'uzair.raheem987@gmail.com'
 const SUBJECT = 'Project Inquiry From uzair.nexteksol.com'
@@ -12,6 +12,22 @@ const engagementOptions = [
 ]
 
 export default function ContactForm() {
+  const [selected, setSelected] = useState('')
+  const [open, setOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  const selectedLabel = engagementOptions.find((o) => o.value === selected)?.label || 'Select an engagement type'
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
@@ -19,7 +35,6 @@ export default function ContactForm() {
 
     const name = (data.get('name') as string).trim()
     const company = (data.get('company') as string).trim()
-    const engagement = data.get('project-type') as string
     const message = (data.get('message') as string).trim()
 
     const body = [
@@ -27,7 +42,7 @@ export default function ContactForm() {
       '',
       company && `Company: ${company}`,
       '',
-      `Engagement: ${engagement}`,
+      `Engagement: ${selected}`,
       '',
       '---',
       '',
@@ -83,20 +98,23 @@ export default function ContactForm() {
           <label className="block text-[11px] sm:text-xs text-brand-gray uppercase tracking-[0.15em] font-bold">
             Nature of Engagement
           </label>
-          <div className="relative">
-            <select
-              name="project-type"
-              required
-              className="w-full bg-transparent border-b border-outline-variant/60 focus:border-brand-dark transition-all py-3 px-0 pr-8 text-sm sm:text-base text-brand-dark appearance-none cursor-pointer"
+          <input type="hidden" name="project-type" value={selected} required />
+          <div className="relative" ref={dropdownRef}>
+            <button
+              type="button"
+              onClick={() => setOpen(!open)}
+              className={`w-full bg-transparent border-b text-left py-3 px-0 pr-8 text-sm sm:text-base transition-all cursor-pointer ${
+                selected
+                  ? 'text-brand-dark border-outline-variant/60'
+                  : 'text-outline-variant border-outline-variant/60'
+              } focus:border-brand-dark`}
             >
-              {engagementOptions.map((opt) => (
-                <option key={opt.value} value={opt.value}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
+              {selectedLabel}
+            </button>
             <svg
-              className="absolute right-0 bottom-3 w-5 h-5 text-brand-gray pointer-events-none"
+              className={`absolute right-0 bottom-3 w-5 h-5 text-brand-gray pointer-events-none transition-transform duration-200 ${
+                open ? 'rotate-180' : ''
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -108,6 +126,28 @@ export default function ContactForm() {
                 d="M19 9l-7 7-7-7"
               />
             </svg>
+
+            {open && (
+              <div className="absolute top-full left-0 w-full mt-2 bg-white border border-outline-variant/30 rounded-lg shadow-lg z-50 overflow-hidden">
+                {engagementOptions.map((opt) => (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    onClick={() => {
+                      setSelected(opt.value)
+                      setOpen(false)
+                    }}
+                    className={`w-full text-left px-4 py-3 text-sm sm:text-base transition-colors ${
+                      selected === opt.value
+                        ? 'bg-brand-dark text-white'
+                        : 'text-brand-dark hover:bg-surface-high'
+                    } ${!opt.value ? 'text-outline-variant' : ''}`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
