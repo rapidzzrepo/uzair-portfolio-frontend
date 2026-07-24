@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ScrollReveal from '../ui/ScrollReveal'
 
 export default function CTASection() {
@@ -53,12 +54,18 @@ export default function CTASection() {
                 success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mt-8 sm:mt-12">
-                <button className="bg-white text-primary px-8 sm:px-12 py-4 sm:py-5 text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-cta-gold hover:text-white transition-all w-full sm:w-auto shadow-xl active:scale-95">
+                <Link
+                  to="/contact"
+                  className="bg-white text-primary px-8 sm:px-12 py-4 sm:py-5 text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-cta-gold hover:text-white transition-all w-full sm:w-auto shadow-xl active:scale-95 text-center"
+                >
                   Book a Consultation
-                </button>
-                <button className="border border-white/20 text-white px-8 sm:px-12 py-4 sm:py-5 text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all w-full sm:w-auto active:scale-95">
+                </Link>
+                <a
+                  href="mailto:uzair.raheem987@gmail.com"
+                  className="border border-white/20 text-white px-8 sm:px-12 py-4 sm:py-5 text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all w-full sm:w-auto active:scale-95 text-center"
+                >
                   Contact Directly
-                </button>
+                </a>
               </div>
             </div>
           </div>
